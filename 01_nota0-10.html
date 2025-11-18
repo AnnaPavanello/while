@@ -7,9 +7,14 @@
 
     //ENTRADA
 
+    let nome = prompt(`Qual o seu nome?`);
 
     //PROCESSAMENTO
 
+    while (!isNaN(nome)){
+        alert(`Nome inválido.`);
+        nome = prompt(`Qual o seu nome?`);
+    }
 
     //SAÍDA
 

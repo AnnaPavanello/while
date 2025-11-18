@@ -7,10 +7,20 @@
 
     //ENTRADA
 
+    let nomeUsuario = prompt(`Informe o nome de usuário.`);
+    let senha = (prompt(`Informe a senha.`));
 
     //PROCESSAMENTO
 
+    while (senha == nomeUsuario) {
+        alert(`Informe uma senha diferente do nome de usuário.`);
+        nomeUsuario = prompt(`Informe o nome de usuário.`);
+        senha = (prompt(`Informe a senha.`));
+
+    }
 
     //SAÍDA
+
+    alert(`Válido!`);
 
 </script>

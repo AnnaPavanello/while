@@ -12,6 +12,21 @@
 
     //ENTRADA
 
+    let nome = prompt(`Informe seu nome.`);
+    while (nome.length < 4) {
+        alert(`Informação inválida.`);
+        nome = prompt(`Informe seu nome.`);
+    }
+    let idade = prompt(`Informe a sua idade.`);
+    while (idade >= 0 || idade <= 150) {
+        alert(`Informação inválida.`);
+        idade = prompt(`Informe a sua idade.`);
+    }
+    let salario = prompt(`Informe o seu salário.`);
+    while (salario <= 0) {
+        alert(`Informação inválida.`);
+        salario = prompt(`Informe o seu salário.`);
+    }
 
     //PROCESSAMENTO
 
