@@ -18,7 +18,7 @@
         nome = prompt(`Informe seu nome.`);
     }
     let idade = prompt(`Informe a sua idade.`);
-    while (idade >= 0 || idade <= 150) {
+    while (idade < 0 || idade > 150) {
         alert(`Informação inválida.`);
         idade = prompt(`Informe a sua idade.`);
     }
@@ -26,6 +26,17 @@
     while (salario <= 0) {
         alert(`Informação inválida.`);
         salario = prompt(`Informe o seu salário.`);
+    }
+    let sexo = prompt(`Informe qual seu gênero (f-feminino ou m-masculino).`).toUpperCase();
+    while(sexo !== `F` && sexo !== `M`){
+        alert(`Informação inválida.`);
+        sexo = prompt(`Informe qual seu gênero (f-feminino ou m-masculino).`).toUpperCase();
+    }
+    let estadoCivil = prompt(`Informe o seu estado civil (s-solteiro, c-casado, v-viúvo, d-divorciado).`).toUpperCase();
+    while (estadoCivil !== `S` && estadoCivil !== `C` && estadoCivil !== `V` && estadoCivil !== `D`){
+        alert(`Informação inválida.`);
+        estadoCivil = prompt(`Informe o seu estado civil (s-solteiro, c-casado, v-viúvo, d-divorciado).`).toUpperCase();
+
     }
 
     //PROCESSAMENTO
