@@ -7,15 +7,17 @@
 
     //ENTRADA
 
-    let nome = prompt(`Qual o seu nome?`);
+    let nota = Number(prompt(`Informe uma nota entre 0 e 10.`));
 
     //PROCESSAMENTO
 
-    while (!isNaN(nome)){
-        alert(`Nome inválido.`);
-        nome = prompt(`Qual o seu nome?`);
+    while (nota < 0 || nota > 10){
+       alert(`Nota inválida.`);
+       nota = Number(prompt(`Informe uma nota entre 0 e 10.`));
     }
 
     //SAÍDA
+    
+    alert(`Obrigado pela resposta!`);
 
 </script>
