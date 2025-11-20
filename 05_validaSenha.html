@@ -7,10 +7,18 @@
 
     //ENTRADA
 
+    const senha = Number(prompt(`Informe uma senha com quatro números inteiros.`));
 
     //PROCESSAMENTO
 
+    let qualAsenha = Number(prompt(`Informe a sua senha.`));
+    while(qualAsenha !== senha){
+        alert(`Senha incorreta!`)
+        qualAsenha = Number(promt(`Informe a sua senha.`));
+    }
 
     //SAÍDA
+
+    alert (`Senha correta!`);
 
 </script>
