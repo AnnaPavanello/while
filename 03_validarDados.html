@@ -17,15 +17,15 @@
         alert(`Informação inválida.`);
         nome = prompt(`Informe seu nome.`);
     }
-    let idade = prompt(`Informe a sua idade.`);
-    while (idade < 0 || idade > 150) {
+    let idade = Number(prompt(`Informe a sua idade.`));
+    while (idade < 0 || idade > 150 || isNaN(idade)) {
         alert(`Informação inválida.`);
-        idade = prompt(`Informe a sua idade.`);
+        idade = NUmber(prompt(`Informe a sua idade.`));
     }
-    let salario = prompt(`Informe o seu salário.`);
-    while (salario <= 0) {
+    let salario = Number(prompt(`Informe o seu salário.`));
+    while (salario <= 0 || isNaN(salario)) {
         alert(`Informação inválida.`);
-        salario = prompt(`Informe o seu salário.`);
+        salario = Number(prompt(`Informe o seu salário.`));
     }
     let sexo = prompt(`Informe qual seu gênero (f-feminino ou m-masculino).`).toUpperCase();
     while(sexo !== `F` && sexo !== `M`){
@@ -43,5 +43,7 @@
 
 
     //SAÍDA
+
+    alert(`Obrigado pelas respostas!`);
 
 </script>
